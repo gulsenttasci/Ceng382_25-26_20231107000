@@ -1,4 +1,4 @@
-﻿@using Ceng382_25_26_202311070.Models
+﻿@using Ceng382_25_26_202311070_1.Models
 @model List<ProductCard>
 
 @{
@@ -19,7 +19,7 @@
                     and a small <code>site.css</code> adds only app-specific styling.
                 </p>
                 <div class="d-flex flex-wrap gap-2">
-                    <a asp-controller="Home" asp-action="ProductCatalog" class="btn btn-primary" onclick="confetti({ shapes: ['circle', 'square'],scalar: 2,particleCount: 100});">
+                    <a asp-controller="Home" asp-action="ProductCatalog" class="btn btn-primary" onclick="confetti({ shapes: ['circle', 'square'],scalar: 2,gravity: 0.5,ticks: 300,particleCount: 100});">
     
                          Open Product Catalog
                     </a>
