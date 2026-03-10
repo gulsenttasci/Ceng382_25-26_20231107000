@@ -17,6 +17,18 @@ public class HomeController : Controller
         return View(students);
     }
 
+       public IActionResult ProductCatalog()
+    {
+        var products = new List<ProductCard>
+        {
+            new ProductCard { Name = "Laptop", Category = "Electronics", Price = 45000, Description = "Developer machine", Midterm = 0, Final = 0 },
+            new ProductCard { Name = "Mouse", Category = "Accessories", Price = 1500, Description = "Wireless mouse", Midterm = 0, Final = 0 }
+        };
+
+        return View(products); 
+    }
+
+
     public IActionResult Privacy()
     {
         return View();
