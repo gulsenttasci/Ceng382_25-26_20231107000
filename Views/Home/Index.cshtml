@@ -19,7 +19,8 @@
                     and a small <code>site.css</code> adds only app-specific styling.
                 </p>
                 <div class="d-flex flex-wrap gap-2">
-                    <a asp-controller="Home" asp-action="ProductCatalog" class="btn btn-primary">
+                    <a asp-controller="Home" asp-action="ProductCatalog" class="btn btn-primary" onclick="confetti({ shapes: ['circle', 'square'],scalar: 2,particleCount: 100});">
+    
                          Open Product Catalog
                     </a>
                     <button class="btn btn-outline-secondary">Read Notes</button>
@@ -87,3 +88,4 @@
 </div>
    
 </section>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
