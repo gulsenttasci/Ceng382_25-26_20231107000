@@ -1,31 +1,66 @@
-html {
-  font-size: 14px;
-}
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+:root {
+  --hero-bg: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  --border-soft: rgba(13, 110, 253, 0.12);
 }
 
 body {
-  margin-bottom: 60px;
+  background-color: #f8f9fb;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.hero-panel {
+  background: var(--hero-bg);
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.hero-panel,
+.info-card,
+.feature-card,
+.product-card {
+  border-radius: 1rem;
+}
+
+.info-card {
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.feature-card,
+.product-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.feature-card:hover,
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.feature-card {
+  border-left: 4px solid transparent;
+}
+
+.accent-html { border-left-color: #dc3545; }
+.accent-bootstrap { border-left-color: #6f42c1; }
+.accent-css { border-left-color: #198754; }
+
+.price-tag {
+  color: #198754;
+  font-weight: 700;
+}
+
+code {
+  background: #f1f3f5;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.35rem;
+  font-size: 0.9em;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: #f1f5f9; /* Hafif gri arka plan */
+    margin-right: 5px;
+    border-left: 5px solid #ccc; /* Varsayılan çizgi */
+    color: #334155;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
