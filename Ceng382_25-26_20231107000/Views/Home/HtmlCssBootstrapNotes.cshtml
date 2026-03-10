@@ -1,0 +1,68 @@
+@using Ceng382_25_26_20231107000.Models
+
+@{
+    ViewData["Title"] = "Notes";
+}
+
+<div class="container py-4">
+    <h1 class="h2 mb-3">HTML + CSS + Bootstrap in MVC (No JS Yet)</h1>
+    <p class="text-secondary">
+        This page explains how the demo is structured and what to change while teaching.
+    </p>
+
+    <div class="row g-3">
+        <div class="col-lg-4">
+            <section class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h2 class="h5">1) HTML in Razor Views</h2>
+                    <p class="small text-secondary">Files: <code>Views/Home/*.cshtml</code></p>
+                    <ul class="small mb-0 ps-3">
+                        <li>Use semantic elements like <code>section</code>, <code>article</code>, <code>header</code>.</li>
+                        <li>Razor loops generate repeated HTML from model data.</li>
+                        <li>Tag Helpers generate routes and URLs safely.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <section class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h2 class="h5">2) Bootstrap for Layout</h2>
+                    <p class="small text-secondary">Loaded in <code>_Layout.cshtml</code> from CDN</p>
+                    <ul class="small mb-0 ps-3">
+                        <li>Grid: <code>container</code>, <code>row</code>, <code>col-sm-6 col-lg-4</code></li>
+                        <li>Components: <code>card</code>, <code>btn</code>, <code>badge</code></li>
+                        <li>Utilities: <code>py-4</code>, <code>mb-3</code>, <code>shadow-sm</code></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <section class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h2 class="h5">3) Custom site.css</h2>
+                    <p class="small text-secondary">File: <code>wwwroot/css/site.css</code></p>
+                    <ul class="small mb-0 ps-3">
+                        <li>Add only project-specific styling.</li>
+                        <li>Do not rewrite Bootstrap completely.</li>
+                        <li>Keep selectors simple and maintainable.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="card border-0 shadow-sm mt-4">
+        <div class="card-body">
+            <h2 class="h5">Suggested classroom progression</h2>
+            <ol class="mb-0">
+                <li>Create plain HTML in a Razor view.</li>
+                <li>Add Bootstrap classes for layout and spacing.</li>
+                <li>Move project-specific styling into <code>site.css</code>.</li>
+                <li>Add JavaScript later for interactions (filtering, modals, AJAX).</li>
+            </ol>
+        </div>
+    </section>
+</div>

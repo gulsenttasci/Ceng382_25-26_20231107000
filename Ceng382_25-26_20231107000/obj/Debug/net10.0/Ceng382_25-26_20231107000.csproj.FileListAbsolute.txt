@@ -22,7 +22,7 @@ C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\
 C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\scopedcss\bundle\Ceng382_25-26_20231107000.styles.css
 C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\scopedcss\projectbundle\Ceng382_25-26_20231107000.bundle.scp.css
-C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\compressed\v9ztgbxd4h-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\compressed\v9ztgbxd4h-{0}-5nndltu3t0-5nndltu3t0.gz
 C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\compressed\z3c36ir32u-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\compressed\tb53rwh5ci-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\github\Ceng382_25-26_20231107000\Ceng382_25-26_20231107000\obj\Debug\net10.0\compressed\jsllxm35hx-{0}-bqjiyaj88i-bqjiyaj88i.gz

@@ -1,0 +1,63 @@
+@using Ceng382_25_26_20231107000.Models
+@model List<ProductCard>
+@{
+    ViewData["Title"] = "Product Catalog";
+}
+
+<div class="container py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-4">
+        <div>
+            <h1 class="h2 mb-1">Product Catalog</h1>
+            <p class="text-secondary mb-0">Bootstrap grid + cards + utilities, plus a small <code>site.css</code>.</p>
+        </div>
+        <a asp-action="Index" class="btn btn-outline-secondary">Back to Home</a>
+    </div>
+
+    <div class="row g-3">
+        @foreach (var p in Model)
+        {
+            <div class="col-sm-6 col-lg-4">
+                <article class="card h-100 shadow-sm product-card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                            <span class="badge rounded-pill text-bg-light border">@p.Category</span>
+                            <span class="price-tag">₺@p.Price.ToString("N0")</span>
+                        </div>
+                        <h2 class="h5 card-title">@p.Name</h2>
+                        <p class="card-text text-secondary flex-grow-1">@p.Description</p>
+                        <button type="button" class="btn btn-primary btn-sm mt-2">View Details</button>
+                    </div>
+                </article>
+            </div>
+        }
+    </div>
+
+    <section class="card border-0 shadow-sm mt-4">
+        <div class="card-body">
+            <h3 class="h5">Where each technology is used on this page</h3>
+            <div class="row g-3 mt-1">
+                <div class="col-md-4">
+                    <h4 class="h6">HTML (Razor View)</h4>
+                    <ul class="small mb-0">
+                        <li><code>&lt;div&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code></li>
+                        <li>Semantic structure and content placeholders</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">Bootstrap</h4>
+                    <ul class="small mb-0">
+                        <li><code>container</code>, <code>row</code>, <code>col-*</code> grid layout</li>
+                        <li><code>card</code>, <code>btn</code>, <code>badge</code>, spacing utilities</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">Custom CSS</h4>
+                    <ul class="small mb-0">
+                        <li>Rounded corners, subtle hover effect, brand accents</li>
+                        <li>Small overrides in <code>wwwroot/css/site.css</code></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
