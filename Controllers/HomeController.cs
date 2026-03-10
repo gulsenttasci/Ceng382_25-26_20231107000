@@ -8,7 +8,13 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        var students = new List<ProductCard>
+        {
+            new ProductCard { Id = 1, Name = "Ayşe Kaya", Midterm = 78, Final = 85, Grade = "BA" },
+            new ProductCard { Id = 2, Name = "Mehmet Demir", Midterm = 65, Final = 72, Grade = "CB" },
+            new ProductCard { Id = 3, Name = "Elif Yılmaz", Midterm = 90, Final = 93, Grade = "AA" }
+        };
+        return View(students);
     }
 
     public IActionResult Privacy()
